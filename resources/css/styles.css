@@ -1,275 +1,112 @@
 @font-face {
     font-family: 'Cera Pro';
     src: url("../fonts/CeraPro/CeraPro-Regular.woff");
-    src: url("../fonts/CeraPro/CeraPro-Regular.woff2");
+         url("../fonts/CeraPro/CeraPro-Regular.woff2");
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+/*01 - HEADER*/
+/*02 - PROMO-SECTION*/
 
-.auth-close {
-    display: inline-block;
-    position: absolute;
-    top: 13px;
-    right: 13px;
-}
-
-.auth-btn.close {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.auth-btn.close:hover {
-    transform: scale(1.08);
-}
-
-.auth-container {
-    font-family: "Cera Pro", sans-serif;
-    position: relative;
-    background: #FFF;
-    width: 500px;
-    height: 700px;
-    border: 1px solid #E0E0E0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.auth-container::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 10px;
-    background: #46A358;
-}
-
-.auth-container a {
-    font-family: "Cera Pro", sans-serif;
-    color: black;
-    text-decoration: none;
-}
-
-.auth-separator {
-    color: #3D3D3D;
-    font-family: "Cera Pro", sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 250;
-    line-height: 16px; /* 88.889% */
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
-.auth-header {
-    font-family: "Cera Pro", sans-serif;
-    margin-left: 172px;
-    margin-top: 52px;
-    margin-bottom: 40px;
-}
-
-.auth-header a {
-    display: inline-block;
-    font-family: "Cera Pro", sans-serif;
-    color: #3D3D3D;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px; /* 80% */
-    transition: transform .25s ease, color .25s ease;
-}
-
-.auth-header a:hover {
-    transform: scale(1.08);
-}
-
-p {
-    font-family: "Cera Pro", sans-serif;
-    margin-left: 103.5px;
-    color: #3D3D3D;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px; /* 123.077% */
-}
-
-.auth-form {
-    font-family: "Cera Pro", sans-serif;
-    align-items: center;
+.container {
+    padding: 30px 120px 52px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 14px;
 }
 
-.auth-form input {
+/*01 - HEADER START*/
+.header {
+    /*border: 1px solid black;*/
     font-family: "Cera Pro", sans-serif;
-    width: 300px;
-    height: 40px;
-    color: #A5A5A5;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px; /* 114.286% */
-    margin-left: 14px;
-    border-radius: 5px;
-    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.50);
+    margin-bottom: 12px;
 }
 
-.auth-form input::placeholder {
-    font-family: "Cera Pro", sans-serif;
-    color: #A5A5A5;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px; /* 114.286% */
-    padding-left: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+.list ul {
+    display: flex;
+    gap: 50px;
 }
 
-.auth-form button {
-    display: inline-block;
-    font-family: "Cera Pro", sans-serif;
-    width: 300px;
-    height: 45px;
-    border-radius: 5px;
-    border: 1px solid #46A358;
-    background: #46A358;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-style: normal;
+.list-item {
+    padding: 8px 0 25px;
+    border-bottom: 3px solid transparent;
+}
+
+.active {
     font-weight: 700;
-    line-height: 16px; /* 100% */
-    margin-top: 41px;
-    transition: transform .25s ease, color .25s ease;
+    border-color: #46A358;
 }
 
-.auth-form button:hover {
-    transform: scale(1.08);
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    padding: 7px 17px;
+    gap: 4px;
 }
 
-.password-field {
-    position: relative;
-    display: inline-block;
-    height: 40px;
+/*02 - PROMO SECTION*/
+.promo {
+    /*border: 1px solid black;*/
+    display: flex;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
 }
 
-.password-field > input {
-    display: block;
-}
-
-.password-field .password-eye {
-    position: absolute;
-    left: 290px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    line-height: 0;
-    font-size: 0;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    transition: opacity .25s ease, transform .25s ease;
-}
-
-.password-field .password-eye:hover {
-    opacity: .7;
-    transform: translateY(-50%) scale(1.1);
-}
-
-.password-field .password-eye svg {
-    display: block;
-}
-
-.auth-or {
+.promo-info {
     font-family: "Cera Pro", sans-serif;
-    margin-top: 36px;
-    margin-left: 202px;
-    margin-right: 203px;
+    padding: 68px 123px 85px 40px;
+}
+
+.promo-welcome {
     color: #3D3D3D;
-    font-size: 13px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.promo-planet {
+    color: #3D3D3D;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+.promo-planet span {
+    font: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    color: #28a745;
+}
+
+.promo-text {
+    color: #727272;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px; /* 123.077% */
-    gap: 10px;
+    line-height: 24px; /* 171.429% */
+    margin-top: 7px;
 }
 
-.auth-or {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 30px 0;
-    gap: 10px;
+.promo-btn {
+    padding: 11px 27px;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    margin-top: 44px;
 }
 
-.auth-or::before,
-.auth-or::after {
-    content: "";
-    display: block;
-    width: 95px;
-    height: 1px;
-    background: #ccc;
-}
-
-.auth-socials {
-    font-family: "Cera Pro", sans-serif;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 27px;
-    margin-bottom: 50px;
-}
-
-.auth-socials button {
-    font-family: "Cera Pro", sans-serif;
-    width: 300px;
-    height: 40px;
-    color: #727272;
-    background: #FFFFFF;
-    border: 1px solid #EAEAEA;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px; /* 123.077% */
-    transition: transform 0.25s ease;
-}
-
-.auth-socials button:hover {
-    transform: scale(1.05);
-}
-
-.social-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    width: 100%;
-    font-family: 'Cera Pro', sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-}
 
 
 
