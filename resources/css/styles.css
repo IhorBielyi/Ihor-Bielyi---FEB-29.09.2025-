@@ -4,232 +4,235 @@
          url("../fonts/CeraPro/CeraPro-Regular.woff2");
 }
 
-.layout {
+/*01 - HEADER*/
+/*02 - PROMO-SECTION*/
+/*03 - DROPDOWN MENU*/
+/*04 - SUBMENU MENU*/
+
+.container {
+    padding: 30px 120px 52px;
     display: flex;
-    padding: 171px 109px 92px 29px;
+    flex-direction: column;
 }
 
-.layout-sidebar {
-    font-family: "Cera Pro", sans-serif;
-    max-width: 300px;
-    max-height: 774px;
-    background-color: #FBFBFB;
-}
-
-.categories-title {
-    padding: 14px 199px 18px 7px;
-    color: #3D3D3D;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 88.889% */
-}
-
-.categories-list-item {
-    padding-left: 12px;
-    margin-bottom: 20px;
-}
-
-.categories-list-item:first-child {
-    color: #46A358;
-    font-weight: 700;
-}
-
-.sale-banner {
-    margin-left: -30px;
-}
-
-.sale-promo-banner {
-    max-width: 360px;
-    max-height: 470px;
-    margin-top: 366px;
-}
-
-.layout-content {
+/*01 - HEADER START*/
+.header {
+    font-family: "Encode Sans Expanded", sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 54px;
     justify-content: space-between;
     align-items: flex-start;
-    align-content: flex-start;
-    padding: 10px;
-    font-family: "Cera Pro", sans-serif;
-}
-
-.tabs {
-    display: flex;
-    gap: 40px;
-}
-
-.tab-link {
-    padding-bottom: 7px;
-    border-bottom: 3px solid transparent;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 106.667% */
-}
-
-.tab-link-active {
-    border-bottom: 3px solid #46A358;
-    color: #46A358;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 106.667% */
-}
-
-.sort-select {
-    font-family: "Cera Pro", sans-serif;
-}
-
-.layout-products {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 38px;
-    gap: 37px;
-}
-
-.product-card {
-    flex: 0 0 calc(33.333% - 25px);
-    text-align: left;
-    margin-top: 12px;
-}
-
-.product-card p {
-    margin-top: 6px;
-    color: #46A358;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 88.889% */
-}
-
-.layout-pagination {
-    display: flex;
-    margin-top: 90px;
-    gap: 10px;
-    flex: 0 0 100%;
-    justify-content: flex-end;
-}
-
-.page-btn {
-    display: flex;
-    align-items: center;
-    max-height: 35px;
-    border-radius: 4px;
-    border: 1px solid #E5E5E5;
-    max-width: 35px;
-    padding: 10px 14px;
-    color: #E5E5E5;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 16px; /* 88.889% */
-}
-
-.page-btn:first-child {
-    background-color: #46A358;
-}
-
-.product-image {
-    position: relative;
-    background-color: #FBFBFB;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.50);
     margin-bottom: 12px;
 }
 
-.product-image::before {
+.list ul {
+    display: flex;
+    gap: 50px;
+}
+
+.list-item {
+    padding: 8px 0 25px;
+}
+
+.list-item:hover {
+    border-bottom: 3px solid #46A358;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    padding: 7px 17px;
+    gap: 4px;
+}
+
+/*02 - PROMO SECTION*/
+.promo {
+    display: flex;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+}
+
+.promo-info {
+    font-family: "Cera Pro", sans-serif;
+    padding: 68px 123px 85px 40px;
+}
+
+.promo-welcome {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.promo-planet {
+    color: #3D3D3D;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+.promo-planet span {
+    font: inherit;
+    line-height: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    color: #28a745;
+}
+
+.promo-text {
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-top: 7px;
+}
+
+.promo-btn {
+    padding: 11px 27px;
+    border-radius: 6px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    margin-top: 44px;
+}
+
+.promo-img {
+    position: relative;
+    display: inline-block;
+}
+
+.promo-img img {
+    display: block;
+}
+
+.promo-image-small {
+    position: absolute;
+    bottom: 24px;
+    left: 50px;
+}
+
+/*03 - DROPDOWN MENU START*/
+.list {
+    position: relative;
+    font-family: "Encode Sans Expanded", sans-serif;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 69px;
+    left: 120px;
+    background: #EDF6EE;
+    display: none;
+    flex-direction: column;
+    max-width: 188px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 5;
+}
+
+.dropdown-menu li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    cursor: pointer;
+    max-height: 35px;
+    width: 180px;
+}
+
+.dropdown-menu li + li {
+    margin-top: -50px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #1A712A;
+}
+
+.has-dropdown:hover > .dropdown-menu {
+    display: flex;
+}
+
+.has-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: transparent;
+}
+
+.list .dropdown-menu {
+    display: none !important;
+    flex-direction: column;
+}
+
+.list .has-dropdown:hover > .dropdown-menu {
+    display: flex !important;
+}
+
+/*04 - SUBMENU MENU START*/
+.dropdown-submenu {
+    position: absolute;
+    top: -105.5px;
+    left: 100%;
+    margin-left: 1px;
+    background: #EDF6EE;
+    display: none !important;
+    flex-direction: column;
+    max-width: 188px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 7;
+}
+
+.dropdown-item.has-submenu:hover > .dropdown-submenu {
+    display: flex !important;
+}
+
+.dropdown-item.has-submenu {
+    position: relative;
+}
+
+.dropdown-item.has-submenu::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #46A358;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.product-image:hover::before {
-    opacity: 1;
-}
-
-.product-actions {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 26px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.product-image:hover .product-actions {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.action-btn {
-    background-color: #FFFFFF;
-    font-size: 18px;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.2s ease, fill 0.2s ease;
-    border: none;
-}
-
-.action-btn svg path {
-    fill: #3D3D3D;
-    transition: fill 0.2s ease;
-}
-
-.action-btn:hover svg path {
-    fill: #46A358;
-}
-
-.action-btn:hover {
-    transform: scale(1.1);
-}
-
-.discount-badge {
-    position: absolute;
-    top: 14px;
-    left: 0;
-    width: 80px;
-    height: 29px;
-    background-color: #46A358;
-    color: #fff;
-    font-family: "Cera Pro", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 29px;
-    text-align: center;
+    right: -12px;
+    width: 12px;
+    height: 100%;
+    background: transparent;
 }
 
 
+.dropdown-menu li:hover {
+    color: #FFFFFF;
+}
 
+.dropdown-item.has-submenu svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
 
+.dropdown-item.has-submenu:hover svg {
+    transform: rotate(180deg);
+}
 
-
-
-
-
-
-
-
-
+.dropdown-item.has-submenu:hover svg path {
+    fill: #FFFFFF;
+}
